@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 150px;
+    }
+    form input:focus {
+      outline: none;
+    }
+    input[type="submit"] {
+      border: 0;
+      background: rgb(15,157,88);
+      color: white;
+      padding: 5px;
+    }
+    input, select {
+      margin-bottom: 10px;
+    }
+    .results {
+      display: flex;
+      flex-wrap: wrap;
+      width: 250px;
+    }
+    .results div,
+    .results section {
+      margin: 5px;
+      border-radius: 5px;
+      background: rgb(244,180,0);
+      padding: 5px;
+      color: white;
+    }
+  </style>
+  <title>six</title>
+</head>
+<body>
+  <form action="">
+  <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
+  <input type="text" name="texts" class="input" placeholder="Elements Text" />
+  <select name="type" class="input">
+    <option value="Div">Div</option>
+    <option value="Section">Section</option>
+  </select>
+  <input type="submit" name="create" value="Create" />
+  <div class="results"></div>
+</form>
+  <script src="js/six.js"></script>
+</body>
+</html>

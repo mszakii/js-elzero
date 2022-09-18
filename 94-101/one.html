@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>one</title>
+  <script>
+    let e = document.links;
+    function o() {
+    for (let i = 0; i < e.length; i++) {
+      if (e[i].classList.contains("open")) {
+        if (e[i].innerHTML === "Elzero") {
+          e[i].click();
+        }
+      }
+    }
+    }
+  </script>
+</head>
+<body>
+  <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+  <script src="js/one.js"></script>
+</body>
+</html>
